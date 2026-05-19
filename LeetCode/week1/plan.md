@@ -23,3 +23,8 @@ For the optimal approach, we can use a hashmap to store the needed value for the
 We calculate the needed value as `needed = target - nums[i]`. If that value is in the map we just return its index and the current iteration index.
 <br>
 For the example input the map would look like: `{2: 0, 7: 1, 11: 2, 15: 3}`. value -> index.
+
+### Contains Duplicate
+In this case the easiest solution is the simpler one.
+<br>
+We create a hashset to store the check if the current number in the loop is already in the set, if it is then we just return True. If not we add it to the set.
