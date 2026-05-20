@@ -7,9 +7,9 @@ Week 1:
 <br>
 [x] Monday -> Two Sum
 <br>
-[] Tuesday -> Contains Duplicate
+[x] Tuesday -> Contains Duplicate
 <br>
-[] Wednesday -> Valid Anagram
+[x] Wednesday -> Valid Anagram
 <br>
 [] Thursday -> Group Anagrams
 <br>
@@ -28,3 +28,10 @@ For the example input the map would look like: `{2: 0, 7: 1, 11: 2, 15: 3}`. val
 In this case the easiest solution is the simpler one.
 <br>
 We create a hashset to store the check if the current number in the loop is already in the set, if it is then we just return True. If not we add it to the set.
+
+### Valid Anagram
+Another case where the easiest solution is the simpler one.
+<br>
+The thing that makes the solution easy its that a anagram just counts the counter, not that the order of the letters, for example abc and bac are anagram. It does not require to be cba.
+<br>
+We create two hashmap for each string, and store its count.
