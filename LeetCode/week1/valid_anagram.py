@@ -1,6 +1,7 @@
 from collections import defaultdict
 
 
+# T: O(n), S: (1)
 class Solution:
     def is_anagram(self, s: str, t: str) -> bool:
         s_map = defaultdict(int)
