@@ -11,7 +11,7 @@ Week 1:
 <br>
 [x] Wednesday -> Valid Anagram
 <br>
-[] Thursday -> Group Anagrams
+[x] Thursday -> Group Anagrams
 <br>
 [] Friday -> Top K Frequent Elements
 
@@ -35,3 +35,14 @@ Another case where the easiest solution is the simpler one.
 The thing that makes the solution easy its that a anagram just counts the counter, not that the order of the letters, for example abc and bac are anagram. It does not require to be cba.
 <br>
 We create two hashmap for each string, and store its count.
+
+### Group Anagrams
+Slightly harder problem to solve. Here we need to group the strings that have the same chars.
+<br>
+To solve this, we can create a hashmap to store as a key the string sorted and append the duplicates as values.
+<br>
+For example, if we have the strings `["eat","tea","tan","ate","nat","bat"]`, we can sort the word and then check if it is stored in the map. `eat -> aet, tea -> aet` and so on.
+<br>
+The downside of this solution is that we need to sort the word, and that makes it not the most optimized solution.
+<br>
+The optimal solution is an overcomplicated algorithm for this problem.
