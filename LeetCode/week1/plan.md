@@ -13,7 +13,7 @@ Week 1:
 <br>
 [x] Thursday -> Group Anagrams
 <br>
-[] Friday -> Top K Frequent Elements
+[x] Friday -> Top K Frequent Elements
 
 ### Two sum
 Simple problem if you go for the brute force approach, we could just have two nested loops and check for the target.
@@ -46,3 +46,10 @@ For example, if we have the strings `["eat","tea","tan","ate","nat","bat"]`, we 
 The downside of this solution is that we need to sort the word, and that makes it not the most optimized solution.
 <br>
 The optimal solution is an overcomplicated algorithm for this problem.
+
+### Top K Frequent Elements
+A pretty hard problem if you don't know the data structure.
+<br>
+I solved it using a max heap and popping while the length of the heap its greater than k. Then we just return the second value of the tuple.
+<br>
+The optimal solution is to solve it using Bucket sort, but its not a very intuitive solution.
