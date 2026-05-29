@@ -8,7 +8,7 @@ Week 2:
 <br>
 [x] Tuesday -> Two Sum 2
 <br>
-[] Wednesday -> 3Sum
+[x] Wednesday -> 3Sum
 <br>
 [] Thursday -> Best Time to Buy and Sell Stock
 <br>
@@ -29,3 +29,12 @@ We will end up using a while loop inside the for loop (our pivot).
 This solution is n*log n because the binary search.
 <br>
 There is a better and simpler approach using two pointers, but my first thought was to use binary search.
+
+### 3Sum
+Not a medium problem at all. It was very difficult to come up with a solution.
+<br>
+My first thought was to use a 3 nested loop solution, but it throws a time limit exceeded.
+<br>
+After that and some thinking, I came up with a solution that uses two pointers and sorting. It sorts an inner nums vector and checks if the sum of the current pivot and left and right pointers gives 0. If it does, then we store it in a vector and sort it to prevent duplicates. But this solution also throws up a time limit.
+<br>
+So after looking for solutions, the closest solution that I found was to use a set instead of a vector and sort each time.
