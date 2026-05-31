@@ -12,7 +12,7 @@ Week 2:
 <br>
 [x] Thursday -> Best Time to Buy and Sell Stock
 <br>
-[] Friday -> Longest Substring Without Repeating Characters
+[x] Friday -> Longest Substring Without Repeating Characters
 
 ### Valid Palindrome
 First two pointers problem, pretty straightforward solution. As usual we need to create a left and right pointers and iterate while they meet.
@@ -45,3 +45,8 @@ A pretty problem where we need to keep track of a condition where p1 > p2 always
 My first thought was to use two pointers in the normal way where l = 0, r = len(nums)-1. But after debugging, I realize that a better approach is to use two pointers but p1 = 0, p2 = p1+1.
 <br>
 And then check for profits and update the pointers correctly. It's important that if nums[p1] > nums[p2] we do p1 = p2, p2 += 1. We dont want do to p1 += 1. 
+
+### Longest Substring Without Repeating Characters
+My first thought thas to keep track of s[n] != s[n+1]. But that approach would not work in this case because a subtstring could repeat n+1.
+<br>
+After see the topics of the problem I did realize that using a hashset could solve the problem. So I instead of doing that check, just add the value in the set and keep track of the repeated characters using two pointers window.
