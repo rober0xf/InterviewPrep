@@ -23,3 +23,10 @@ A different kind of problem where we need to design a special type of stack. The
 Archieving in constant time we need to associate each value with the min value at that point, for example:
 <br>
 [4, 3, 5, 1, 6] -> [(4,4), (3,3), (5,3), (1,1), (6,1)] 
+
+### Evaluate Reverse Polish Notation
+Similar problem that valid parentheses. 
+<br>
+We loop the input array until the value is an operand, if not we append it to a stack.
+<br>
+If its an operand then we pop the last 2 elements of the stack and do the operation, then append that result to the same stack.
