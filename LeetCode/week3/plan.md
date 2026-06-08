@@ -8,9 +8,9 @@ Week 3:
 <br>
 [x] Tuesday -> Min Stack
 <br>
-[] Wednesday -> Evaluate Reverse Polish Notation
+[x] Wednesday -> Evaluate Reverse Polish Notation
 <br>
-[] Thursday -> Daily Temperatures
+[x] Thursday -> Daily Temperatures
 <br>
 [] Friday -> Car Fleet
 
@@ -30,3 +30,8 @@ Similar problem that valid parentheses.
 We loop the input array until the value is an operand, if not we append it to a stack.
 <br>
 If its an operand then we pop the last 2 elements of the stack and do the operation, then append that result to the same stack.
+
+### Daily Temperatures
+Of course the first solution that comes to mind is the brute force, but it would throw time limit.
+<br>
+The clever solution its to use a vector and stack. We need to first append the current index in the stack, then check if the today's temperature is hotter than the top of the stack. If so we pop from the stack and calculate the index like i - idx.
