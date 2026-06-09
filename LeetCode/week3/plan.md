@@ -12,7 +12,7 @@ Week 3:
 <br>
 [x] Thursday -> Daily Temperatures
 <br>
-[] Friday -> Car Fleet
+[x] Friday -> Car Fleet
 
 ### Valid Parentheses
 First stack problem, the hard part is to come with the idea of a map to check if the closing is the iteration char. If it is, then we check that the opening is the same kind with stack[-1] == map[c] and then pop. If not then its a different kind and we can return False immediately.
@@ -35,3 +35,8 @@ If its an operand then we pop the last 2 elements of the stack and do the operat
 Of course the first solution that comes to mind is the brute force, but it would throw time limit.
 <br>
 The clever solution its to use a vector and stack. We need to first append the current index in the stack, then check if the today's temperature is hotter than the top of the stack. If so we pop from the stack and calculate the index like i - idx.
+
+### Car Fleet
+Complicated problem to even understand the question. Could not solve without looking at the solution.
+<br>
+The stack solution seems less intuitive than the O(1) space solution.
