@@ -23,17 +23,20 @@ class ListNode:
 
 class Solution:
     def reverse_list(self, head: ListNode | None) -> ListNode | None:
-        current = head
+        if head is None:
+            return None
+
         prev = None
+        current = head
 
         while current is not None:
-            next_node = current.next
+            temp = current.next
             current.next = prev
             prev = current
-            current = next_node
+            current = temp
             print(prev.val)
 
-        return head
+        return prev
 
 
 head = ListNode([1, 2, 3, 4, 5])
